@@ -1,0 +1,426 @@
+/* document information
+  -document: thé theme
+  -version:1.0.0
+  - auteur: micka
+*/
+/*colors
+ -defaut body texte #eee
+ -h1 :#eee
+ -h2 :#33333
+ -h3
+  
+ icon:green
+ 
+ -button
+ -button hover
+
+
+ */
+
+/*FONTS
+  - default:Lato
+  -subtitle
+  */
+
+/* CSS DIRECTORY
+   1.Global
+   2.header
+   3.produit
+
+
+   */
+
+
+/* Global
+   ===============================*/
+html {
+
+    background-color: #fff;
+
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'lato', 'Arial', 'sans-serif';
+
+    text-transform: uppercase;
+    letter-spacing: 1 px;
+    font-weight: 300;
+    word-spacing: 8px;
+
+
+
+}
+
+h1 {
+    color: #eee;
+
+}
+
+h2 {
+    color: #333333;
+    font-size: 250%;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+
+}
+
+h2:after {
+
+    display: block;
+    height: 2px;
+    background-color: green;
+    width: 100px;
+    content: "";
+    margin: 0 auto;
+    margin-top: 10px;
+
+
+
+
+}
+
+h3 {
+    font-size: 160%;
+
+
+
+}
+
+
+
+
+
+
+p {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 24px;
+}
+
+section {
+    padding: 30px 0 60px 0;
+}
+
+
+/*HEADER
+========================*/
+header {
+    background-image: linear-gradient(rgba(0, 242, 96, 0.4),
+            rgba(7, 117, 230, 0.6)),
+        url(../image/vivek-kumar-JS_ohjocm00-unsplash.jpg);
+    height: 100vh;
+    background-position: cente;
+    background-size: cover;
+}
+
+.home-title {
+    position: absolute;
+    top: 30%;
+}
+
+.home-title h1 {
+    font-size: 340%;
+    color: #fff;
+
+}
+
+.home-title h1 span {
+    font-weight: 700;
+
+
+}
+
+.home-title p {
+    color: #fff;
+
+}
+
+/* button*/
+.btn {
+    display: inline-block;
+    padding: 10px, 30px;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 1s, color 1s, border 1s;
+    margin-bottom: 20px;
+}
+
+.btn-full {
+    background: azure;
+    color: green;
+    margin-right: 15px;
+
+}
+
+.btn-ghost {
+    border: 1px white solid;
+    color: #fff;
+}
+
+.btn-full:hover {
+    background-color: green;
+    color: #fff;
+
+}
+
+.btn-ghost:hover {
+    background-color: green;
+    border: 1px green solid;
+    color: #fff;
+}
+
+/*produit
+========================*/
+.produit-plus {
+    margin: 20px;
+
+}
+
+.produit-plus:hover .produit-icon {
+    color: #575757;
+    transform: translateX(20px);
+}
+
+.produit-img {
+    max-width: 100%;
+    height: auto;
+}
+
+.produit-icon {
+    font-size: 34px;
+    color: green;
+    transition: all 1s;
+}
+
+/*famille  thé
+========================*/
+
+.famille-the {
+    background-color: #cdf6e1;
+
+}
+
+.famille-details {
+    background-color: #fff;
+    padding: 40px 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+
+}
+
+.famille-details img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+
+}
+
+.famille-details h4 {
+    text-align: center;
+}
+
+/*galerie photo
+========================*/
+
+.galerie-img {
+    display: block;
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    height: 300px;
+    margin-bottom: 30px;
+}
+
+.galerie-titre {
+    position: absolute;
+    bottom: 20px;
+    left: 40px;
+
+
+}
+
+.galerie-titre h4 {
+    color: #fff;
+}
+
+/*client
+========================*/
+.clients {
+    background-image: linear-gradient(rgba(0, 242, 96, 0.4),
+            rgba(7, 117, 230, 0.6)), url(../source-bootstrap/Avis\ clients/the-paysage.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+.clients h2 {
+    color: #fff;
+
+}
+
+.clients h2::after {
+    background-color: #fff;
+
+}
+
+blockquote {
+    padding: 5px;
+    font-style: italic;
+    line-height: 130%;
+    color: #fff
+}
+
+blockquote:before {
+    content: "\201C";
+    font-size: 800%;
+    font-family: "Sanchez", serif;
+    position: absolute;
+    top: 30px;
+    left: 5px;
+    color: rgba(255, 255, 255, 0.6);
+
+
+}
+
+cite {
+    font-size: 90%;
+    display: block;
+    margin-top: 20px;
+
+
+}
+
+cite img {
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+/*packe
+=======================*/
+.packs {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.packs h3 {
+    color: green;
+    font-weight: 400;
+}
+
+.packs h4 {
+
+    font-size: 200%;
+    font-weight: 100;
+
+}
+.packs span{
+    font-weight: 100;
+    font-size: 40%;
+    position: relative;
+    top:-15px;
+    left: 2px;
+}
+.pack-premium{
+    background-color:#22b922;
+    color:#fff ;
+}
+.pack-title-premium{
+    position:absolute;
+    top:10px;
+    right:30px ;
+    background-color:#fff;
+    color:green;
+    border-radius:10px;
+    padding:2px;
+    font-size: 14px;
+    text-align: center ;
+}
+
+.pack-title {
+    padding: 10px 10px 0 10px;
+    border-bottom: 1px solid #e3e0e0;
+
+}
+
+.pack-content ul {
+    list-style: none;
+    padding: 20px;
+    font-weight: 300;
+    line-height: 35px;
+
+}
+
+.pack-content ul li i {
+    font-size: 90%;
+    margin-right: 10px;
+}
+
+.pack-singup {
+    text-align: center;
+
+}
+.pack-singup:hover .btn-pack{
+    background-color:rgb(1, 37, 1) ;
+    color:#fff; 
+}
+
+.btn-pack {
+    background-color: green;
+    color: #fff;
+    margin-bottom: 20px;
+}
+/*contact form
+=======================*/
+.contact-form{
+    margin-top:30px;
+
+}
+.contact-message{
+    width: 100%;
+}
+.btn-contact{
+    background: green;
+    color:#fff;
+    margin-right: 15px;
+}
+.maps{
+    position: relative;
+    padding-bottom: 75%;
+    height: 0;
+    overflow: hidden;
+
+}
+.maps iframe {
+    position: absolute;
+    top :0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+}
+/*footer
+=======================*/
+footer{
+    background-color: black;
+    color: #fff;
+    height: 60px;
+    text-align: center;
+    padding: 20px;
+}
+.copyright{
+    text-align: center;
+    
+
+}
+.copyright a {
+    color: #fff;
+}
